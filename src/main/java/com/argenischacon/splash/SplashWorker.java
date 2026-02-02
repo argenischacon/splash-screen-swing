@@ -90,6 +90,12 @@ public abstract class SplashWorker extends SwingWorker<Void, Void> {
     protected void onFinished() {
     }
 
+    /**
+     * Updates the splash screen's progress and status message from the background task.
+     * This method is thread-safe.
+     * @param progress The new progress value (0-100).
+     * @param message The new status message to display.
+     */
     protected final void updateProgress(int progress, String message) {
         SwingUtilities.invokeLater(() -> splash.setStatusText(message));
         this.targetProgress = Math.min(progress, 100);
