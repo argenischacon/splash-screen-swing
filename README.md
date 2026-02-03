@@ -7,6 +7,8 @@
 
 Una librería ligera y moderna para implementar pantallas de carga (Splash Screens) en aplicaciones Java Swing. Utiliza **FlatLaf** para renderizado de iconos SVG y ofrece una API fluida (Builder Pattern) basada en `SwingWorker` para gestionar tareas en segundo plano con animaciones fluidas.
 
+![Splash Screen](/assets/splash-screen.gif)
+
 ## Características
 
 *   **Soporte SVG**: Renderizado de iconos vectoriales de alta calidad gracias a FlatLaf.
